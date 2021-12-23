@@ -1,1 +1,3 @@
-react-redux-full-course
+## react-redux-full-course
+
+In this course we are going to cover all feature of react-redux
