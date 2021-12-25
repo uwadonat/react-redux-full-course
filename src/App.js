@@ -1,7 +1,18 @@
 import React, { Component } from "react";
-
+import Component1 from "./components/component";
 class App extends Component {
   name = "Donat";
+
+  state = {
+    count: 0,
+  };
+  increment() {
+    this.setState({ count: 5 });
+  }
+
+  display() {
+    return 7;
+  }
   render() {
     const styles = {
       border: "solid",
@@ -15,8 +26,11 @@ class App extends Component {
       <div>
         <div style={styles}>hi</div>
         <h1>Hello {this.name}</h1>
-        <button>Hover me</button>
+        <button onClick={() => this.increment()}>Hover me</button>
+
+        <div>count is: {this.state.count}</div>
         <div>{names.name1}</div>
+        <Component1 name="Evodie" age="25" />
       </div>
     );
   }
