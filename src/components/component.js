@@ -1,13 +1,11 @@
 import React from "react";
 
 const Component1 = (props) => {
-  return (
-    <div>
-      {props.name}
-      {props.age * 2}
-      <div> {props.prop1}</div>
-    </div>
-  );
+  if (false) {
+    return <div>container div1</div>;
+  } else {
+    return <div>container div2</div>;
+  }
 };
 
 export default Component1;
