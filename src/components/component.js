@@ -5,6 +5,7 @@ const Component1 = (props) => {
     <div>
       {props.name}
       {props.age * 2}
+      <div> {props.prop1}</div>
     </div>
   );
 };

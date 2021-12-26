@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Component1 from "./components/component";
+
 import Container1 from "./container/container";
 class App extends Component {
   name = "Donat";
@@ -31,7 +31,7 @@ class App extends Component {
 
         <div>count is: {this.state.count}</div>
         <div>{names.name1}</div>
-        <Component1 name="Evodie" age="25" />
+
         <Container1 Nickname="Paradis" />
       </div>
     );
