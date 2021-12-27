@@ -11,6 +11,12 @@ class App extends Component {
     this.setState({ count: 5 });
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ count: 2 });
+    }, 1000);
+  }
+
   display() {
     return 7;
   }
