@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Component1 from "../components/component";
+import Form from "./form";
 
 class Container1 extends Component {
   constructor(props) {
@@ -41,9 +42,10 @@ class Container1 extends Component {
         <div>{this.state.age}</div>
         <div>{this.state.name}</div>
         {this.list.map((item) => (
-          <this.RenderList lst={item} />
+          <this.RenderList key={item.id} lst={item} />
         ))}
         <Component1 prop1={this.state.name} />
+        <Form />
       </div>
     );
   }
