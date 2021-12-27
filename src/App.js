@@ -11,6 +11,10 @@ class App extends Component {
     this.setState({ count: 5 });
   }
 
+  shouldComponentUpdate() {
+    return true;
+  }
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({ count: 2 });
