@@ -22,6 +22,7 @@ export const failure = () => {
   };
 };
 
+// passing data to the action ctreator
 export const user_input = (text) => {
   return {
     type: ACTION_TYPES.USER_INPUT,
