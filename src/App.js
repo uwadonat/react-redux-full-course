@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Container1 from "./container/container";
+import Component2 from "./components/Component2";
 class App extends Component {
   name = "Donat";
 
@@ -43,6 +44,7 @@ class App extends Component {
         <div>{names.name1}</div>
 
         <Container1 Nickname="Paradis" />
+        <Component2 />
       </div>
     );
   }
