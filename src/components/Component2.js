@@ -8,7 +8,7 @@ class Component2 extends Component {
     let user_text = "text1";
     return (
       <div>
-        <button onClick={() => console.log(this.props.user_text)}>
+        <button onClick={() => console.log(this.props.stateProp1)}>
           Get State
         </button>
         <button onClick={() => this.props.action1()}>Dispatch action1</button>
@@ -21,9 +21,14 @@ class Component2 extends Component {
         <button onClick={() => this.props.action_creator2()}>
           Dispatch action_creator2
         </button>
+
+        {/* call action creator with text */}
         <button onClick={() => this.props.action_creator3(user_text)}>
           Dispatch action_creator3
         </button>
+
+        {/* render data to the UI */}
+        {this.props.user_text ? <h1>{this.props.user_text}</h1> : null}
       </div>
     );
   }
@@ -31,8 +36,8 @@ class Component2 extends Component {
 
 function mapStateToProps(state) {
   return {
-    stateProp1: state.stateProp1,
-    user_text: state.user_text,
+    stateProp1: state.reducer1.stateProp1,
+    user_text: state.reducer2.user_text,
   };
 }
 
@@ -44,6 +49,8 @@ function mapDispatchToProps(dispatch) {
     // dispatch action creators
     action_creator1: () => dispatch(ACTIONS.success()),
     action_creator2: () => dispatch(ACTIONS.failure()),
+
+    // dispatch action creator with data
     action_creator3: (text) => dispatch(ACTIONS.user_input(text)),
   };
 }
