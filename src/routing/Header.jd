@@ -1,0 +1,23 @@
+import react, { Component } from "react";
+import { Link } from "react-router-dom";
+
+class Header extends Component {
+    render() {
+        return(
+            <div>
+              <Link to="/component3">
+              Component3
+              </Link>
+               <Link to="/component4">
+              Component4
+              </Link>
+               <Link to="/Component2">
+              Component2
+              </Link>
+              
+            </div>
+        )
+    }
+}
+
+export default Header;
