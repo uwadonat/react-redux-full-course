@@ -5,10 +5,10 @@ import * as ACTIONS from "../store/actions/actions";
 
 class Component2 extends Component {
   render() {
-    let user_text = "text1";
+    let user_text = "text";
     return (
       <div>
-        <button onClick={() => console.log(this.props.stateProp1)}>
+        <button onClick={() => console.log("this is stateProp1",this.props.stateProp1)}>
           Get State
         </button>
         <button onClick={() => this.props.action1()}>Dispatch action1</button>
