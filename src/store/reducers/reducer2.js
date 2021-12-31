@@ -2,6 +2,7 @@ import * as ACTION_TYPES from "../actions/actionTypes";
 
 const initialState = {
   user_text: "",
+  password: ""
 };
 
 const Reducer2 = (state = initialState, action) => {
