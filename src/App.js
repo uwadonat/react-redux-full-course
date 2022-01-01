@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Container1 from "./container/container";
 import Component2 from "./components/Component2";
+import Component4 from "./components/Component4";
 class App extends Component {
   name = "Donat";
 
@@ -45,6 +46,7 @@ class App extends Component {
 
         <Container1 Nickname="Paradis" />
         <Component2 />
+        <Component4 />
       </div>
     );
   }
