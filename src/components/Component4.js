@@ -8,7 +8,7 @@ const Component4 = () => {
 console.log("state in componet4",statee)
     return(
         <div>
-            Component4
+            Component4 {state}
         </div>
     )
 }
